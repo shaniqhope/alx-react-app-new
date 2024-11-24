@@ -1,5 +1,5 @@
-{
-  "dependencies": {
-    "zustand": "^5.0.1"
-  }
+"dependencies": {
+  "zustand": "^<version-number>"
 }
+
+
