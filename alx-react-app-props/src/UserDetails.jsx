@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import UserContext from './UserContext';
 
 function UserDetails() {
+  // Consume the context using useContext
   const userData = useContext(UserContext);
 
   return (
