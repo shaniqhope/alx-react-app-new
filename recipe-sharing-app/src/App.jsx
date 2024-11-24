@@ -1,18 +1,15 @@
 import React from 'react';
-import { useTestStore } from './testStore';
+import AddRecipeForm from './components/AddRecipeForm';
+import RecipeList from './components/RecipeList';
 
 const App = () => {
-  const count = useTestStore((state) => state.count);
-  const increment = useTestStore((state) => state.increment);
-
   return (
-    <div style={{ textAlign: 'center', fontFamily: 'Arial' }}>
-      <h1>Test Zustand Store</h1>
-      <p>Count: {count}</p>
-      <button onClick={increment}>Increment</button>
+    <div style={{ fontFamily: 'Arial, sans-serif', textAlign: 'center' }}>
+      <h1>Recipe Sharing Application</h1>
+      <AddRecipeForm />
+      <RecipeList />
     </div>
   );
 };
 
 export default App;
-

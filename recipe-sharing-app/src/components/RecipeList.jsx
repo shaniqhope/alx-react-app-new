@@ -5,11 +5,11 @@ const RecipeList = () => {
   const recipes = useRecipeStore((state) => state.recipes);
 
   return (
-    <div style={{ margin: '20px' }}>
+    <div>
       <h2>Recipes</h2>
       {recipes.length > 0 ? (
         recipes.map((recipe) => (
-          <div key={recipe.id} style={{ marginBottom: '10px' }}>
+          <div key={recipe.id}>
             <h3>{recipe.title}</h3>
             <p>{recipe.description}</p>
           </div>
@@ -22,3 +22,4 @@ const RecipeList = () => {
 };
 
 export default RecipeList;
+
